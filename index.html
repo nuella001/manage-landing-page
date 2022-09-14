@@ -16,7 +16,7 @@
 
 <body>
   <!-- Navbar -->
-  <nav class="relative container mx-auto px-20">
+  <nav class="relative container mx-auto px-20 py-6">
     <!-- Flex-Container -->
     <div class="flex items-center justify-between">
       <!-- Logo -->
@@ -59,9 +59,11 @@
   <!-- Hero section -->
   <section id="hero" >
     <!-- Flex Container -->
-    <div class="container flex flex-col-reverse items-center px-20 py-6 mx-auto mt-10 space-y-0 md:flex-row  md:space-y-0">
+    <div class="container flex flex-col-reverse items-center px-20 py-6 mx-auto mt-10 space-y-0 md:flex-row  md:space-y-0"
+    >
       <!-- Left Item -->
-      <div class="flex flex-col mb-12 space-y-4     md:w-1/2 md:mb-32 " >
+      <div class="flex flex-col mb-12 space-y-4     md:w-1/2 md:mb-32 "
+      data-aos="fade-up" data-aos-duration="1500" data-aos-offset="600" >
         <h1 class="max-w-lg text-[3.5rem] font-bold text-center leading-[1.2]  md:text-left">
           Bring everyone together to build better products
         </h1>
@@ -73,12 +75,12 @@
         </div>
       </div>
       <!-- Image -->
-      <div>
+      <div data-aos="fade-up" data-aos-duration="1500" data-aos-offset="600">
         <img src="./images/illustration-intro.svg" alt="">
       </div>
   </section>
   <!-- Feature section -->
-  <section id="feature" data-aos="fade-up" data-aos-duration="500" data-aos-offset="600">
+  <section id="feature" data-aos="fade-up" data-aos-duration="1500" data-aos-offset="600">
     <div class="container mx-auto flex flex-col px-20 mt-10 space-y-12 md:space-y-0 md:flex-row">
       <!-- What's different -->
       <div class="flex flex-col space-y-12 
@@ -314,7 +316,7 @@
   <script src="./script.js"></script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
-    AOS.init();
+    AOS.init({once: true});
   </script>
 </body>
 
